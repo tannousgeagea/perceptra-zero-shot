@@ -20,6 +20,8 @@ class OWLv2Model(BaseDetectionModel):
     MODEL_CONFIGS = {
         "owlv2-base": "google/owlv2-base-patch16-ensemble",
         "owlv2-large": "google/owlv2-large-patch14-ensemble",
+        "owlv2-base-patch16": "google/owlv2-base-patch16",
+        "owlv2-large-patch14": "google/owlv2-large-patch14",
     }
     
     def __init__(
@@ -136,3 +138,5 @@ class OWLv2Model(BaseDetectionModel):
 # Register OWLv2 models
 ModelRegistry.register("owlv2-base", OWLv2Model)
 ModelRegistry.register("owlv2-large", OWLv2Model)
+ModelRegistry.register("owlv2-base-patch16", OWLv2Model)
+ModelRegistry.register("owlv2-large-patch14", OWLv2Model)

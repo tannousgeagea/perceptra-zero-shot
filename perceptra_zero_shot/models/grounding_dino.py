@@ -123,8 +123,7 @@ class GroundingDINOModel(BaseDetectionModel):
         results = self.processor.post_process_grounded_object_detection(
             outputs=outputs,
             input_ids=inputs["input_ids"],
-            box_threshold=box_thresh,
-            text_threshold=text_thresh,
+            threshold=box_thresh,
             target_sizes=target_sizes
         )[0]
         
