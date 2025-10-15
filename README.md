@@ -42,7 +42,7 @@ pip install perceptra-zero-shot[all]
 
 ### From Source
 ```bash
-git clone https://github.com/yourusername/perceptra-zero-shot.git
+git clone https://github.com/tannousgeagea/perceptra-zero-shot.git
 cd perceptra-zero-shot
 pip install -e .
 ```
@@ -298,7 +298,7 @@ Represents a detected object.
 ### Setup Development Environment
 
 ```bash
-git clone https://github.com/yourusername/perceptra-zero-shot.git
+git clone https://github.com/tannousgeagea/perceptra-zero-shot.git
 cd perceptra-zero-shot
 pip install -e ".[dev]"
 ```
@@ -361,14 +361,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   title = {Perceptra Zero-Shot: Production-Ready Zero-Shot Object Detection},
   author = {Perceptra Team},
   year = {2025},
-  url = {https://github.com/yourusername/perceptra-zero-shot}
+  url = {https://github.com/tannousgeagea/perceptra-zero-shot}
 }
 ```
 
 ## 📧 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/perceptra-zero-shot/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/perceptra-zero-shot/discussions)
+- **Issues**: [GitHub Issues](https://github.com/tannousgeagea/perceptra-zero-shot/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/tannousgeagea/perceptra-zero-shot/discussions)
 - **Email**: team@perceptra.ai
 
 ---

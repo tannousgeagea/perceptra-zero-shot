@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Perceptra Team", email = "team@perceptra.ai"}
+    {name = "Tannous Geagea", email = "tannousgeagea@hotmail.com"}
 ]
 keywords = [
     "computer-vision",
@@ -83,10 +83,10 @@ all = [
 perceptra-zero-shot = "perceptra_zero_shot.cli.main:cli"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/perceptra-zero-shot"
+Homepage = "https://github.com/tannousgeagea/perceptra-zero-shot"
 Documentation = "https://perceptra-zero-shot.readthedocs.io"
-Repository = "https://github.com/yourusername/perceptra-zero-shot"
-Issues = "https://github.com/yourusername/perceptra-zero-shot/issues"
+Repository = "https://github.com/tannousgeagea/perceptra-zero-shot"
+Issues = "https://github.com/tannousgeagea/perceptra-zero-shot/issues"
 
 [tool.setuptools.packages.find]
 include = ["perceptra_zero_shot*"]
