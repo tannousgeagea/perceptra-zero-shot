@@ -55,7 +55,7 @@ def detect(image_path, prompts, model, device, confidence, output, json_output, 
     )
     
     # Display results
-    click.echo(f"\nFound {len(result)} objects in {result.inference_time:.2f}s:")
+    click.echo(f"\nFound {len(result)} objects in {result.inference_time or 0:.2f}s:")
     for i, box in enumerate(result.boxes, 1):
         click.echo(f"  {i}. {box.label}: {box.confidence:.3f} at {box.to_xyxy()}")
     
@@ -148,13 +148,13 @@ def serve(host, port, reload):
     """
     try:
         import uvicorn
-        from perceptra_zero_shot.api.app import app
+        from perceptra_zero_shot.api.main import app
         
         click.echo(f"Starting API server on http://{host}:{port}")
         click.echo("API docs available at /docs")
         
         uvicorn.run(
-            "perceptra_zero_shot.api.app:app",
+            "perceptra_zero_shot.api.main:app",
             host=host,
             port=port,
             reload=reload

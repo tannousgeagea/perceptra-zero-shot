@@ -6,7 +6,7 @@ from unittest.mock import patch, Mock
 from PIL import Image
 import io
 
-from perceptra_zero_shot.api.app import app
+from perceptra_zero_shot.api import app
 from perceptra_zero_shot.core.result import DetectionResult, BoundingBox
 
 
@@ -50,7 +50,7 @@ class TestAPI:
         assert len(models) > 0
         assert all("name" in m for m in models)
     
-    @patch('perceptra_zero_shot.api.app.get_detector')
+    @patch('perceptra_zero_shot.api.main.get_detector')
     def test_detect_endpoint(self, mock_get_detector, client, mock_image_file):
         """Test detection endpoint."""
         # Setup mock detector
